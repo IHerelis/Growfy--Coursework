@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,6 +25,7 @@ a {
 button {
   cursor: pointer;
   border: none;
+  color: inherit;
   background-color: transparent;
 }
 
@@ -46,7 +47,93 @@ body {
   height: 100%;
 }
 
-.wrapper--container {
-  max-width: 1200px;
-  margin: 0 auto;
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.container--main {
+  width: min(100% - 0rem, 94.5rem);
+  padding-inline: 7.25rem;
+  margin-inline: auto;
+  background-color: black;
+}
+
+.header {
+  min-height: 3.25rem;
+  padding-block: 2rem;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.header__logo .header__logo__image {
+  width: 9.1875rem;
+  height: 2.5rem;
+  margin-right: 2.1875rem;
+}
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__elements {
+  display: grid;
+  grid-template-columns: 1fr 10rem;
+  align-items: center;
+  line-height: 1.6; /* 160% */
+  gap: 1.875rem;
+}
+
+.header__elements__links {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.header__elements__link {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.875rem;
+}
+
+.header__elements__card {
+  display: flex;
+  gap: 0.3125rem;
+  align-items: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.0625rem;
+}
+.header__elements__card .elements__card__namber {
+  background-color: gray;
+  border-radius: 50%;
+  padding: 0.1875rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__elements__card .elements__card__namber span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+}
+
+.header__elements__button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6; /* 160% */
+  letter-spacing: 2px;
+}
+.header__elements__button a {
+  padding: 1rem 1.8125rem;
+  border-radius: 50px;
+  background: #3D96F4;
 }/*# sourceMappingURL=style.css.map */

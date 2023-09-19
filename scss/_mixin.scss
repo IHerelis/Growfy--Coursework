@@ -8,3 +8,9 @@
   width: min(calc(100% - $padding), $max-width);
   margin-inline: auto;
 }
+
+@mixin container-main($max-width, $padding-inline, $padding: rem(0)) {
+  width: min(calc(100% - $padding), $max-width);
+  padding-inline: $padding-inline;
+  margin-inline: auto;
+}
