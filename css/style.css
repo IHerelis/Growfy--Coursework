@@ -59,6 +59,7 @@ body {
   padding-inline: 7.25rem;
   margin-inline: auto;
   background-color: black;
+  color: white;
 }
 
 .header {
@@ -68,6 +69,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  margin-bottom: 2.75rem;
 }
 
 .header__logo .header__logo__image {
@@ -127,13 +129,126 @@ body {
 }
 
 .header__elements__button {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.6; /* 160% */
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 .header__elements__button a {
   padding: 1rem 1.8125rem;
-  border-radius: 50px;
-  background: #3D96F4;
+  border-radius: 3.125rem;
+  background-color: #3D96F4;
+}
+
+.marketing {
+  margin-bottom: 11.875rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  min-height: 43.75rem;
+}
+
+@media (max-width: 84.93625em) {
+  .marketing {
+    min-height: 25rem;
+  }
+}
+.marketing__items {
+  padding-block: 8.125rem;
+}
+.marketing__items .marketing__items__title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+.marketing__items .marketing__items__title .image__dots {
+  position: absolute;
+  top: -1.3125rem;
+  left: -1.9375rem;
+  width: 122px;
+  height: 122px;
+}
+.marketing__items .marketing__items__title .image__dots img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.marketing__items .marketing__items__text {
+  color: #9C9C9C;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5; /* 150% */
+  margin-bottom: 2.0625rem;
+}
+.marketing__items .marketing__items__buttons {
+  display: flex;
+  gap: 2rem;
+  padding-block: 1rem;
+}
+.marketing__items .marketing__items__buttons .marketing__btn__services {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6; /* 160% */
+  letter-spacing: 0.125rem;
+}
+.marketing__items .marketing__items__buttons .marketing__btn__services a {
+  padding: 1rem 1.5rem;
+  border-radius: 3.125rem;
+  background-color: #3D96F4;
+}
+.marketing__items .marketing__items__buttons .marketing__btn__contact {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6; /* 160% */
+  letter-spacing: 0.125rem;
+}
+.marketing__items .marketing__items__buttons .marketing__btn__contact a {
+  padding: 1rem 1.9375rem;
+  border-radius: 3.125rem;
+  background: rgba(129, 129, 139, 0.2);
+}
+
+.marketing__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.3fr 1fr 1.3fr;
+  row-gap: 1.875rem;
+  -moz-column-gap: 3.375rem;
+       column-gap: 3.375rem;
+  padding-left: 3.375rem;
+  padding-right: 1.6875rem;
+}
+.marketing__cards .marketing__card__img {
+  width: 100%;
+  height: 100%;
+}
+.marketing__cards .marketing__card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.marketing__cards .marketing-img-1 {
+  grid-row: 1/3;
+  border-radius: 378px;
+  overflow: hidden;
+}
+.marketing__cards .marketing-img-2 {
+  grid-row: 1/2;
+  border-radius: 241.906px 0px 241.906px 241.906px;
+  overflow: hidden;
+}
+.marketing__cards .marketing-img-3 {
+  grid-row: 3/4;
+  border-radius: 241.906px 241.906px 0px 241.906px;
+  overflow: hidden;
+}
+.marketing__cards .marketing-img-4 {
+  grid-row: 2/4;
+  border-radius: 378px;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

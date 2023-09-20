@@ -16,8 +16,10 @@ body {
 .container--main {
   @include container-main(rem(1512), rem(116));
   background-color: $colorBlack;
+  color: $colorWhite;
 }
 
+// ===== .header =====
 .header {
   min-height: rem(52);
   padding-block: rem(32);
@@ -25,6 +27,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  margin-bottom: rem(44);
 }
 
 .header__logo {
@@ -81,17 +84,114 @@ body {
     }
   }
 }
-.elements__card__namber {
-}
 
 .header__elements__button {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.6; /* 160% */
-  letter-spacing: 2px;
+  @include btn;
   a {
     padding: rem(16) rem(29);
-    border-radius: 50px;
-    background: #3D96F4;
+    border-radius: rem(50);
+    background-color: $colorBlue;
+  }
+}
+
+// ===== section = marketing =====
+.marketing {
+  margin-bottom: rem(190);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: rem(32);
+  min-height: rem(700);
+}
+@media (max-width: em(1358.98)) {
+  .marketing {
+    min-height: rem(400);
+  }
+}
+
+.marketing__items {
+  padding-block: rem(130);
+  .marketing__items__title {
+    font-size: rem(51.2);
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+    // padding-top: rem(130);
+    margin-bottom: rem(28);
+    position: relative;
+    .image__dots {
+      position: absolute;
+      top: rem(-21);
+      left: rem(-31);
+      width: 122px;
+      height: 122px;
+      img {
+        @include img-standart;
+      }
+    }
+  }
+  .marketing__items__text {
+    color: $colorGray-text;
+    font-size: rem(18);
+    font-weight: 300;
+    line-height: 1.5; /* 150% */
+    margin-bottom: rem(33);
+  }
+  .marketing__items__buttons {
+    display: flex;
+    gap: rem(32);
+    padding-block: rem(16);
+
+    .marketing__btn__services {
+      @include btn;
+      a {
+        padding: rem(16) rem(24);
+        border-radius: rem(50);
+        background-color: $colorBlue;
+      }
+    }
+    .marketing__btn__contact {
+      @include btn;
+      a {
+        padding: rem(16) rem(31);
+        border-radius: rem(50);
+        background: $colorLightGray;
+      }
+    }
+  }
+}
+
+.marketing__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.3fr 1fr 1.3fr;
+  row-gap: rem(30);
+  column-gap: rem(54);
+  padding-left: rem(54);
+  padding-right: rem(27);
+  .marketing__card__img {
+    width: 100%;
+    height: 100%;
+    img {
+      @include img-standart
+    }
+  }
+  .marketing-img-1 {
+    grid-row: 1 / 3;
+    border-radius: 378px;
+    overflow: hidden;
+  }
+  .marketing-img-2 {
+    grid-row: 1 / 2;
+    border-radius: 241.906px 0px 241.906px 241.906px;
+    overflow: hidden;
+  }
+  .marketing-img-3 {
+    grid-row: 3 / 4;
+    border-radius: 241.906px 241.906px 0px 241.906px;
+    overflow: hidden;
+  }
+  .marketing-img-4 {
+    grid-row: 2 / 4;
+    border-radius: 378px;
+    overflow: hidden;
   }
 }

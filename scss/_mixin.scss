@@ -14,3 +14,10 @@
   padding-inline: $padding-inline;
   margin-inline: auto;
 }
+
+@mixin btn {
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: 1.6; /* 160% */
+  letter-spacing: rem(2);
+}
