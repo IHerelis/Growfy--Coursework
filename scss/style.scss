@@ -102,7 +102,7 @@ body {
   column-gap: rem(32);
   min-height: rem(700);
 }
-@media (max-width: em(1358.98)) {
+@media (max-width: em(1368.98)) {
   .marketing {
     min-height: rem(400);
   }
@@ -111,10 +111,7 @@ body {
 .marketing__items {
   padding-block: rem(130);
   .marketing__items__title {
-    font-size: rem(51.2);
-    font-weight: 500;
-    line-height: 1.2; /* 120% */
-    // padding-top: rem(130);
+    @include title;
     margin-bottom: rem(28);
     position: relative;
     .image__dots {
@@ -161,7 +158,7 @@ body {
 
 .marketing__cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(rem(222), rem(242)));
   grid-template-rows: 1.3fr 1fr 1.3fr;
   row-gap: rem(30);
   column-gap: rem(54);
@@ -194,4 +191,98 @@ body {
     border-radius: 378px;
     overflow: hidden;
   }
+}
+
+// ===== section = 
+
+
+
+// ===== section = services =====
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  min-height: rem(750);
+  .services__items {
+    margin-right: rem(104);
+  }
+}
+
+.services__items__label {
+  @include label;
+  margin-bottom: rem(19);
+}
+
+.services__items__title {
+  @include title;
+  margin-bottom: rem(12);
+}
+
+.services__items__text {
+  color: $colorGray-text;
+  font-size: rem(18);
+  font-weight: 300;
+  line-height: 1.5; /* 150% */
+  margin-bottom: rem(33);
+}
+
+.services__btn__all-services {
+  @include btn;
+  padding-block: rem(16);
+  a {
+    padding: rem(16) rem(29);
+    border-radius: rem(50);
+    background-color: $colorBlue;
+  }
+}
+
+.services__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(rem(250), 1fr));
+  gap: rem(32);
+  grid-auto-rows: 1fr;
+  // height: 100%;
+}
+.services__card {
+  border-radius: 30px;
+  background-color: $colorLightGray;
+  padding: rem(55) rem(25);
+}
+
+.services__card__img {
+  width: rem(76);
+  height: rem(76);
+  margin-bottom: rem(15);
+  img {
+    @include img-standart;
+  }
+}
+
+.services__card__items {
+  // width: 83%;
+  margin-right: rem(45);
+}
+
+.services__card__title {
+  font-size: rem(19);
+  font-weight: 400;
+  line-height: 1.4; /* 140% */
+  margin-bottom: rem(10);
+}
+
+.services__card__text {
+  color: $colorDarkGray-text;
+  line-height: 1.5; /* 150% */
+}
+
+.card__social {
+ 
+}
+.card__paid {
+  
+}
+.card__email {
+}
+.card__seo {
+ 
 }

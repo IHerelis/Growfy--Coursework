@@ -21,3 +21,23 @@
   line-height: 1.6; /* 160% */
   letter-spacing: rem(2);
 }
+
+@mixin title {
+  font-size: rem(51.2);
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+}
+
+@mixin label {
+  color: $colorGray-text;
+  font-size: rem(10.8);
+  line-height: 1.6; /* 160% */
+  letter-spacing: rem(2);
+  text-transform: uppercase;
+  display: inline-block;
+  border: rem(1) solid $colorLightGray;
+  border-radius: rem(12);
+  h4 {
+    padding: rem(11) rem(19);
+  }
+}
