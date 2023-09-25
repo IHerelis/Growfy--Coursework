@@ -215,54 +215,50 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: rem(30);
+  align-content: center;
 }
 
-.trusted__group__subject {
-  // width: 210px;
-  height: 78.75px;
-  img {
-    @include img-standart;
-  }
-}
+// .trusted__group__subject {
+//   // width: 210px;
+//   height: 78.75px;
+//   img {
+//     @include img-standart;
+//   }
+// }
 
 .luminous {
-  background: linear-gradient(90deg, #0D0D11 8%, rgba(0, 0, 0, 0.00) 50%), url("../img/logo-growfy.svg.svg") center / 100% no-repeat;
+  background: linear-gradient(90deg, black 8%, rgba(0, 0, 0, 0.00) 50%), url("../img/Luminous-Logo.svg.svg") center / 100% no-repeat;
   // width: 210px;
-  height: 78.75px;
+  height: rem(78.75);
   object-fit: cover;
-  opacity: 0.3;
 }
 
 .sitemark {
-  background: url("../img/logo-growfy.svg.svg") center / 100% no-repeat;
+  background: url("../img/Sitemark-Logo.svg.svg") center / 100% no-repeat;
   // width: 210px;
-  height: 78.75px;
+  height: rem(78.75);
   object-fit: cover;
-  opacity: 0.45;
 }
 
 .pronature {
-  background: url("../img/logo-growfy.svg.svg") center / 100% no-repeat;
+  background: url("../img/Pronature-Logo.svg.svg") center / 100% no-repeat;
   // width: 210px;
-  height: 78.75px;
+  height: rem(78.75);
   object-fit: cover;
-  opacity: 0.45;
 }
 
 .greenish {
-  background: url("../img/logo-growfy.svg.svg") center / 100% no-repeat;
+  background: url("../img/Greenish-Logo.svg.svg") center / 100% no-repeat;
   // width: 210px;
-  height: 78.75px;
+  height: rem(78.75);
   object-fit: cover;
-  opacity: 0.45;
 }
 
 .waveless {
-  background: linear-gradient(270deg, #0D0D11 8%, rgba(0, 0, 0, 0.00) 50%), url("../img/logo-growfy.svg.svg") center / 100% no-repeat;
+  background: linear-gradient(270deg, black 8%, rgba(0, 0, 0, 0.00) 50%), url("../img/Waveless-Logo.svg.svg") center / 100% no-repeat;
   // width: 210px;
-  height: 78.75px;
+  height: rem(78.75);
   object-fit: cover;
-  opacity: 0.3;
 }
 
 
@@ -271,7 +267,6 @@ body {
 .services {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
-  // align-items: center;
   min-height: rem(750);
   margin-bottom: rem(190);
   .services__items {
@@ -313,7 +308,6 @@ body {
   grid-template-columns: repeat(2, minmax(rem(250), 1fr));
   gap: rem(32);
   grid-auto-rows: 1fr;
-  // height: 100%;
 }
 
 .services__cards__marketing {
@@ -346,7 +340,6 @@ body {
 }
 
 .services__card__items {
-  // width: 83%;
   margin-right: rem(45);
 }
 
