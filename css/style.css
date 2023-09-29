@@ -140,6 +140,11 @@ body {
   background-color: #3D96F4;
 }
 
+@media (max-width: 74.93625em) {
+  .header__elements {
+    display: none;
+  }
+}
 .marketing {
   margin-bottom: 11.875rem;
   display: grid;
@@ -253,6 +258,14 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 74.93625em) {
+  .marketing {
+    grid-template-columns: 1fr;
+  }
+  .marketing__cards {
+    justify-content: space-evenly;
+  }
+}
 .trusted-by {
   margin-bottom: 9.0625rem;
 }
@@ -318,6 +331,7 @@ body {
 .services .services__items {
   margin-right: 6.5rem;
   align-self: center;
+  margin-bottom: 6.25rem;
 }
 
 .services__items__label {
@@ -365,7 +379,7 @@ body {
 
 .services__cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(15.625rem, 1fr));
+  grid-template-columns: repeat(2, minmax(15.625rem, 20rem));
   gap: 2rem;
   grid-auto-rows: 1fr;
 }
@@ -421,5 +435,152 @@ body {
 @media (max-width: 85.56125em) {
   .services__card__items {
     margin-right: 0rem;
+  }
+}
+@media (max-width: 74.93625em) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+  .services .services__items {
+    margin-right: 0rem;
+    width: 80%;
+    justify-self: center;
+  }
+  .services .services__cards {
+    justify-content: space-evenly;
+    gap: 4rem;
+  }
+  .services .services__cards .services__cards__marketing {
+    gap: 4rem;
+  }
+  .services .services__cards .services__cards__additionally {
+    gap: 4rem;
+  }
+}
+.reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  min-height: 49.0625rem;
+  margin-bottom: 11.875rem;
+}
+
+.reasons__image {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  align-items: end;
+  position: relative;
+}
+.reasons__image .reasons__image__dots {
+  position: absolute;
+  left: -0.625rem;
+  bottom: 0;
+  width: 7.625rem;
+  height: 7.625rem;
+}
+.reasons__image .reasons__image__dots img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reasons__image__big {
+  height: 100%;
+  width: 100%;
+  border-radius: 42.375rem 0rem 23.625rem 23.625rem;
+  overflow: hidden;
+}
+.reasons__image__big img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reasons__image__smoll {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 11.3399rem 11.3399rem 11.3399rem 0rem;
+  overflow: hidden;
+}
+.reasons__image__smoll img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reasons__items {
+  align-self: center;
+  padding-block: 1.25rem;
+}
+.reasons__items .reasons__items__label {
+  color: #9C9C9C;
+  font-size: 0.675rem;
+  line-height: 1.6; /* 160% */
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 0.0625rem solid rgba(129, 129, 139, 0.2);
+  border-radius: 0.75rem;
+  margin-bottom: 2.6875rem;
+}
+.reasons__items .reasons__items__label h4 {
+  padding: 0.6875rem 1.1875rem;
+}
+.reasons__items .reasons__items__title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  margin-bottom: 2.5rem;
+}
+.reasons__items .reasons__items__text {
+  color: #9C9C9C;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5; /* 150% */
+  margin-bottom: 2.5rem;
+}
+
+.reasons__items__list {
+  color: #9C9C9C;
+  font-weight: 300;
+  line-height: 1.5; /* 150% */
+  display: grid;
+  row-gap: 1.5625rem;
+}
+.reasons__items__list li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.reasons__items__list li span::before {
+  content: "";
+  background: url("../img/check-solid-1.svg") center 100% no-repeat;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: rgba(129, 129, 139, 0.1);
+  border-radius: 50%;
+  background-position: center;
+}
+
+@media (max-width: 74.93625em) {
+  .reasons {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    min-height: 49.0625rem;
+    margin-bottom: 11.875rem;
+  }
+  .reasons__image {
+    grid-template-columns: 2fr 1fr;
+  }
+  .reasons__image .reasons__image__big {
+    max-height: 49.0625rem;
+    max-width: 26.4375rem;
+    aspect-ratio: 1/1.85;
   }
 }/*# sourceMappingURL=style.css.map */

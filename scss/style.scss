@@ -95,6 +95,12 @@ body {
   }
 }
 
+@media (max-width: em(1198.98)) {        // ======= @media request =======
+  .header__elements {
+    display: none;
+  }
+}
+
 // ===== section = marketing ===========
 
 .marketing {
@@ -104,7 +110,8 @@ body {
   column-gap: rem(32);
   min-height: rem(700);
 }
-@media (max-width: em(1368.98)) {
+
+@media (max-width: em(1368.98)) {            // ======= @media request =======
   .marketing {
     min-height: rem(400);
   }
@@ -170,7 +177,7 @@ body {
     width: 100%;
     height: 100%;
     img {
-      @include img-standart
+      @include img-standart;
     }
   }
   .marketing-img-1 {
@@ -192,6 +199,15 @@ body {
     grid-row: 2 / 4;
     border-radius: 23.625rem;
     overflow: hidden;
+  }
+}
+
+@media (max-width: em(1198.98)) {          // ======= @media request =======
+  .marketing {
+    grid-template-columns: 1fr;
+  }
+  .marketing__cards {
+    justify-content: space-evenly;
   }
 }
 
@@ -272,6 +288,7 @@ body {
   .services__items {
     margin-right: rem(104);
     align-self: center;
+    margin-bottom: rem(100)
   }
 }
 
@@ -305,7 +322,7 @@ body {
 
 .services__cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(rem(250), 1fr));
+  grid-template-columns: repeat(2, minmax(rem(250), rem(320)));
   gap: rem(32);
   grid-auto-rows: 1fr;
 }
@@ -355,9 +372,29 @@ body {
   line-height: 1.5; /* 150% */
 }
 
-@media (max-width: em(1368.98)) {
+@media (max-width: em(1368.98)) {        // ======= @media request =======
   .services__card__items {
     margin-right: rem(0);
+  }
+}
+@media (max-width: em(1198.98)) {        // ======= @media request =======
+  .services {
+    grid-template-columns: 1fr;
+    .services__items {
+      margin-right: rem(0);
+      width: 80%;
+      justify-self: center;
+    }
+    .services__cards {
+      justify-content: space-evenly;
+      gap: rem(64);
+      .services__cards__marketing {
+        gap: rem(64);
+      }
+      .services__cards__additionally {
+        gap: rem(64);
+      }
+    }
   }
 }
 
@@ -373,3 +410,115 @@ body {
 .card__seo {
   
 }
+
+// =========== reasons = section ==============
+
+.reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(64);
+  min-height: rem(785);
+  margin-bottom: rem(190);
+}
+
+.reasons__image {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  align-items: end;
+  position: relative;
+  .reasons__image__dots {
+    position: absolute;
+    left: rem(-10);
+    bottom: 0;
+    width: rem(122);
+    height: rem(122);
+    img {
+      @include img-standart;
+    }
+  }
+}
+
+.reasons__image__big {
+  height: 100%;
+  width: 100%;
+  border-radius: 42.375rem 0rem 23.625rem 23.625rem;
+  overflow: hidden;
+  img {
+    @include img-standart;
+  }
+}
+
+.reasons__image__smoll {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 11.3399rem 11.3399rem 11.3399rem 0rem;
+  overflow: hidden;
+  img {
+    @include img-standart;
+  }
+}
+
+.reasons__items {
+  align-self: center;
+  padding-block: rem(20);
+  .reasons__items__label {
+    @include label;
+    margin-bottom: rem(43);
+  }
+  .reasons__items__title {
+    @include title;
+    margin-bottom: rem(40);
+  }
+  .reasons__items__text {
+    color: $colorGray-text;
+    font-size: rem(18);
+    font-weight: 300;
+    line-height: 1.5; /* 150% */
+    margin-bottom: rem(40);
+  }
+}
+
+.reasons__items__list {
+  color: $colorGray-text;
+  font-weight: 300;
+  line-height: 1.5; /* 150% */
+  display: grid;
+  row-gap: rem(25);
+  li {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
+  li span::before {
+    content: "";
+    background: url("../img/check-solid-1.svg")center 100% no-repeat;
+    display: inline-block;
+    width: rem(32);
+    height: rem(32);
+    object-fit: cover;
+    background-color: $colorDarkGray-text-10;
+    border-radius: 50%;
+    background-position: center;
+   }
+}
+
+@media (max-width: em(1198.98)) {            // ======= @media request =======
+  .reasons {
+    grid-template-columns: 1fr;
+    gap: rem(64);
+    min-height: rem(785);
+    margin-bottom: rem(190);
+    // grid-auto-rows: 1fr;
+  }
+  .reasons__image {
+    grid-template-columns: 2fr 1fr;
+    .reasons__image__big {
+      max-height: rem(785);
+      max-width: rem(423);
+      aspect-ratio: 1/1.85;
+    }
+  }
+}
+
+// ========  ===========
+
