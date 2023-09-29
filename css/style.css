@@ -448,13 +448,13 @@ body {
   }
   .services .services__cards {
     justify-content: space-evenly;
-    gap: 4rem;
+    gap: 3rem;
   }
   .services .services__cards .services__cards__marketing {
-    gap: 4rem;
+    gap: 3rem;
   }
   .services .services__cards .services__cards__additionally {
-    gap: 4rem;
+    gap: 3rem;
   }
 }
 .reasons {
@@ -582,5 +582,64 @@ body {
     max-height: 49.0625rem;
     max-width: 26.4375rem;
     aspect-ratio: 1/1.85;
+  }
+}
+.statistic {
+  min-height: 36.875rem;
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  gap: 2rem;
+  margin-bottom: 11.875rem;
+}
+
+.statistic__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(13.75rem, 22.5rem));
+  gap: 2rem;
+}
+
+.statistic__card {
+  background-color: rgba(129, 129, 139, 0.1);
+  border-radius: 1.875rem;
+  padding: 2.5rem;
+}
+.statistic__card .statistic__card__title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  margin-bottom: 2rem;
+}
+.statistic__card .statistic__card__text {
+  color: #9C9C9C;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5; /* 150% */
+}
+
+.statistic__image {
+  width: 100%;
+  aspect-ratio: 1/1.18;
+  border-radius: 0rem 23.625rem 23.625rem 23.625rem;
+  overflow: hidden;
+}
+.statistic__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 74.93625em) {
+  .statistic {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .statistic .statistic__cards {
+    justify-content: space-evenly;
+  }
+  .statistic .statistic__image {
+    max-width: 31.25rem;
+    max-height: 36.875rem;
+    justify-self: center;
   }
 }/*# sourceMappingURL=style.css.map */
