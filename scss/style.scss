@@ -342,8 +342,8 @@ body {
 }
 
 .services__card {
-  border-radius: 30px;
-  background-color: $colorLightGray;
+  border-radius: rem(30);
+  background-color: $colorDarkGray-text-10;
   padding: rem(55) rem(25);
 }
 
@@ -564,6 +564,121 @@ body {
       max-height: rem(590);
       // aspect-ratio: 1/1.18;
       justify-self: center;
+    }
+  }
+}
+
+// ======== testimonials = section ============
+
+.testimonials {
+  min-height: rem(230);
+  margin-bottom: rem(190);
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: rem(64);
+}
+
+.testimonials__items {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.testimonials__item {
+  width: 68%;
+  .testimonials__label {
+    @include label;
+    margin-bottom: rem(30);
+  }
+  .testimonials__title {
+    @include title;
+    margin-bottom: rem(12);
+  }
+  .testimonials__text {
+    color: $colorGray-text;
+    font-size: rem(18);
+    font-weight: 300;
+    line-height: 1.5; /* 150% */
+  }
+}
+
+.testimonials__buttons {
+  align-self: self-end;
+}
+.testimonials__btn {
+  @include btn;
+  padding-block: rem(16);
+  a {
+    padding: rem(16) rem(25);
+    border-radius: rem(50);
+    background-color: $colorBlue;
+  }
+}
+
+.testimonials__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(rem(220), rem(395)));
+  gap: rem(48);
+  // grid-auto-rows: 1fr;
+}
+
+.testimonials__card {
+  background-color: $colorDarkGray-text-10;
+  border-radius: rem(30);
+  padding: rem(64) rem(40);
+}
+
+.testimonials__card__persona {
+  display: flex;
+  gap: rem(16);
+  margin-bottom: rem(33);
+  .persona__image__br-1 {
+    border-radius: 0rem 4.2519rem 4.2519rem 4.2519rem;
+  }
+  .persona__image__br-2 {
+    border-radius: 4.2519rem 0rem 4.2519rem 4.2519rem;
+  }
+  .persona__image__br-3 {
+    border-radius: 4.2519rem 4.2519rem 0rem 4.2519rem;
+  }
+  .card__persona__image {
+    overflow: hidden;
+    width: rem(68);
+    height: rem(68);
+  }
+  .card__persona__items {
+    .card__persona__name {
+      line-height: 1.5; /* 150% */
+      margin-bottom: rem(5);
+    }
+    .card__persona__company {
+      color: $colorGray-text;
+      font-size: rem(14);
+      line-height: 1.6; /* 160% */
+    }
+  }
+}
+
+.testimonials__card__title {
+  font-size: rem(32);
+  font-weight: 400;
+  line-height: 1.4; /* 140% */
+  padding-bottom: rem(34);
+}
+
+.testimonials__card__text {
+  color: $colorGray-text;
+  line-height: 1.5; /* 150% */
+  margin-bottom: rem(35);
+}
+
+.testimonials__card__rating {
+  display: flex;
+  padding-bottom: rem(20);
+  .card__rating {
+    width: rem(19.6);
+    height: rem(18);
+    img {
+      @include img-standart;
     }
   }
 }

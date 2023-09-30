@@ -399,8 +399,8 @@ body {
 }
 
 .services__card {
-  border-radius: 30px;
-  background-color: rgba(129, 129, 139, 0.2);
+  border-radius: 1.875rem;
+  background-color: rgba(129, 129, 139, 0.1);
   padding: 3.4375rem 1.5625rem;
 }
 
@@ -642,4 +642,132 @@ body {
     max-height: 36.875rem;
     justify-self: center;
   }
+}
+.testimonials {
+  min-height: 14.375rem;
+  margin-bottom: 11.875rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+}
+
+.testimonials__items {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.testimonials__item {
+  width: 68%;
+}
+.testimonials__item .testimonials__label {
+  color: #9C9C9C;
+  font-size: 0.675rem;
+  line-height: 1.6; /* 160% */
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 0.0625rem solid rgba(129, 129, 139, 0.2);
+  border-radius: 0.75rem;
+  margin-bottom: 1.875rem;
+}
+.testimonials__item .testimonials__label h4 {
+  padding: 0.6875rem 1.1875rem;
+}
+.testimonials__item .testimonials__title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  margin-bottom: 0.75rem;
+}
+.testimonials__item .testimonials__text {
+  color: #9C9C9C;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5; /* 150% */
+}
+
+.testimonials__buttons {
+  align-self: self-end;
+}
+
+.testimonials__btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.6; /* 160% */
+  letter-spacing: 0.125rem;
+  padding-block: 1rem;
+}
+.testimonials__btn a {
+  padding: 1rem 1.5625rem;
+  border-radius: 3.125rem;
+  background-color: #3D96F4;
+}
+
+.testimonials__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(13.75rem, 24.6875rem));
+  gap: 3rem;
+}
+
+.testimonials__card {
+  background-color: rgba(129, 129, 139, 0.1);
+  border-radius: 1.875rem;
+  padding: 4rem 2.5rem;
+}
+
+.testimonials__card__persona {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.0625rem;
+}
+.testimonials__card__persona .persona__image__br-1 {
+  border-radius: 0rem 4.2519rem 4.2519rem 4.2519rem;
+}
+.testimonials__card__persona .persona__image__br-2 {
+  border-radius: 4.2519rem 0rem 4.2519rem 4.2519rem;
+}
+.testimonials__card__persona .persona__image__br-3 {
+  border-radius: 4.2519rem 4.2519rem 0rem 4.2519rem;
+}
+.testimonials__card__persona .card__persona__image {
+  overflow: hidden;
+  width: 4.25rem;
+  height: 4.25rem;
+}
+.testimonials__card__persona .card__persona__items .card__persona__name {
+  line-height: 1.5; /* 150% */
+  margin-bottom: 0.3125rem;
+}
+.testimonials__card__persona .card__persona__items .card__persona__company {
+  color: #9C9C9C;
+  font-size: 0.875rem;
+  line-height: 1.6; /* 160% */
+}
+
+.testimonials__card__title {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.4; /* 140% */
+  padding-bottom: 2.125rem;
+}
+
+.testimonials__card__text {
+  color: #9C9C9C;
+  line-height: 1.5; /* 150% */
+  margin-bottom: 2.1875rem;
+}
+
+.testimonials__card__rating {
+  display: flex;
+  padding-bottom: 1.25rem;
+}
+.testimonials__card__rating .card__rating {
+  width: 1.225rem;
+  height: 1.125rem;
+}
+.testimonials__card__rating .card__rating img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
