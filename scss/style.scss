@@ -67,6 +67,12 @@ body {
   grid-auto-flow: column;
   align-items: center;
   gap: rem(30);
+  a {
+    transition: 0.45s;
+  }
+  a:hover {
+    background-color: $colorHoverBlue;
+  }
 }
 
 .header__elements__link {
@@ -104,6 +110,10 @@ body {
     padding: rem(16) rem(29);
     border-radius: rem(50);
     background-color: $colorBlue;
+    transition: 0.45s;
+  }
+  a:hover {
+    background-color: $colorHoverBlue;
   }
 }
 
@@ -127,6 +137,10 @@ body {
     height:rem(3);
     background-color: white;
   }
+}
+
+.burger--btn:hover {
+  background-color: $colorHoverBlue;
 }
 
 .burger--btn::before,
@@ -248,21 +262,29 @@ body {
     display: flex;
     gap: rem(32);
     padding-block: rem(16);
-
     .marketing__btn__services {
       @include btn;
       a {
         padding: rem(16) rem(24);
         border-radius: rem(50);
         background-color: $colorBlue;
+        transition: 0.45s;
+      }
+      a:hover {
+        background-color: $colorHoverBlue;
       }
     }
     .marketing__btn__contact {
+      transition: 0.45s;
       @include btn;
       a {
         padding: rem(16) rem(31);
         border-radius: rem(50);
         background: $colorLightGray;
+        transition: 0.45s;
+      }
+      a:hover {
+        background-color: $colorHoverDark;
       }
     }
   }
@@ -461,6 +483,10 @@ body {
     padding: rem(16) rem(29);
     border-radius: rem(50);
     background-color: $colorBlue;
+    transition: 0.45s;
+  }
+  a:hover {
+    background-color: $colorHoverBlue;
   }
 }
 
@@ -469,6 +495,12 @@ body {
   grid-template-columns: repeat(2, minmax(rem(250), rem(320)));
   gap: rem(32);
   grid-auto-rows: 1fr;
+  a {
+    transition: 0.45s;
+  }
+  a:hover {
+    background-color: $colorHoverDark;
+  }
 }
 
 .services__cards__marketing {
@@ -822,6 +854,10 @@ body {
     padding: rem(16) rem(25);
     border-radius: rem(50);
     background-color: $colorBlue;
+    transition: 0.45s;
+  }
+  a:hover {
+    background-color: $colorHoverBlue;
   }
 }
 
@@ -986,6 +1022,10 @@ body {
     padding: rem(16) rem(41.5);
     border-radius: rem(50);
     background-color: $colorBlue;
+    transition: 0.45s;
+  }
+  a:hover {
+    background-color: $colorHoverBlue;
   }
 }
 
@@ -1120,6 +1160,10 @@ body {
       padding: rem(16) rem(24);
       border-radius: rem(50);
       background-color: $colorBlue;
+      transition: 0.45s;
+    }
+    a:hover {
+      background-color: $colorHoverBlue;
     }
   }
   .to-start__btn__contact {
@@ -1128,6 +1172,10 @@ body {
       padding: rem(16) rem(31);
       border-radius: rem(50);
       background: $colorLightGray;
+      transition: 0.45s;
+    }
+    a:hover {
+      background-color: $colorHoverDark;
     }
   }
 }
@@ -1143,6 +1191,9 @@ body {
 }
 
 @media (max-width: em(768.98)) {            // ======= @media request =======
+  .to-start {
+    margin-bottom: rem(0);
+  }
   .to-start__buttons {
     flex-direction: column;
     gap: rem(64);
@@ -1185,6 +1236,12 @@ body {
   .footer__socials__icons {
     display: inline-flex;
     gap: rem(16);
+    a {
+      transition: 0.45s;
+    }
+    a:hover {
+      background-color: $colorWhite;
+    }
     .socials__icon {
       width: rem(36);
       height: rem(36);
@@ -1225,15 +1282,6 @@ body {
   }
 }
 
-.footer__pages__title {
-}
-.footer__pages__link {
-}
-.footer__utility__title {
-}
-.footer__utility__link {
-}
-
 .footer__subscribe {
   .footer__subscribe__title {
     font-size: rem(20);
@@ -1259,6 +1307,10 @@ body {
         padding: rem(14.5) rem(33);
         border-radius: rem(50);
         border: .0625rem solid $colorDarkGray-text-30;
+        transition: 0.45s;
+      }
+      a:hover {
+        background-color: $colorHoverDark;
       }
     }
     .footer__subscribe__btn-subscribe {
@@ -1268,6 +1320,10 @@ body {
         padding: rem(16) rem(25);
         border-radius: rem(50);
         background-color: $colorBlue;
+        transition: 0.45s;
+      }
+      a:hover {
+        background-color: $colorHoverBlue;
       }
     }
   }
